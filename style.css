@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    background-color: #2874f0;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+header input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+}
+
+header button {
+    margin-left: 20px;
+    padding: 8px 15px;
+    background: white;
+    color: #2874f0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    background: #f1f3f6;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
