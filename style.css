@@ -41,25 +41,62 @@ header button {
     padding: 40px;
 }
 
-/* Products */
-.products {
+/* Grab or Gone Section */
+.grab-section {
+    background-color: #c8e6e6;
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+
+.grab-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #212121;
+}
+
+.products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
 }
 
-.card {
-    border: 1px solid #ddd;
-    text-align: center;
-    padding: 15px;
+.product-card {
     background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card img {
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
-.card:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-title {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.card-price {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #212121;
 }
